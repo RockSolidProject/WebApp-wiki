@@ -4,22 +4,22 @@ description: Automaticly build and push to Wiki
 jobs:
   build:
     docker:
-      - image: circleci/node
-    seteps:
-      -checkout
+      - image: circleci/node:latest
+    steps:
+      - checkout
       - run:
-        name: Push wiki to project wiki
-        command: |
-          git config user.email "${GITHUB_EMAIL}"
-          git config user.name "${GITHUB_USERNAME}"
-          git remote remove origin
-          git remote add origin https://${GITHUB_API_KEY}@github.com/RockSolidProject/WebApp-wiki.git > /dev/null 2>&1
-          git push origin master > /dev/null 2>&1
+          name: Push wiki to project wiki
+          command: |
+            git config user.email "$GITHUB_EMAIL"
+            git config user.name "$GITHUB_USERNAME"
+            git remote remove origin
+            git remote add origin https://$GITHUB_API_KEY@github.com/RockSolidProject/WebApp-wiki.git > /dev/null 2>&1
+            git push origin master > /dev/null 2>&1
 
 workflows:
   main:
     jobs:
       - build:
-        filers:
-          branches:
-           only: main
+          filters:
+            branches:
+              only: main

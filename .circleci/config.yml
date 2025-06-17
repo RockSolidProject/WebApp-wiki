@@ -5,7 +5,6 @@ jobs:
   build:
     docker:
       - image: circleci/node
-    working_directory: ~/project/tmp
     steps:
       - checkout
       - run:
@@ -16,12 +15,12 @@ jobs:
       - run:
           name: Clone wiki repo
           command: |
-            cd ..
             git clone https://${GITHUB_API_KEY}@github.com/RockSolidProject/WebApp.wiki.git wiki
       - run:
           name: Replace wiki files 
           command: |
-            cp -r tmp/. wiki/
+            shopt -s extglob
+            cp -r !(wiki) wiki/
       - run:
           name: Update remote 
           command: |

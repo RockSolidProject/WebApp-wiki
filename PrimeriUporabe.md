@@ -1,6 +1,6 @@
-## 3. Primeri uporabe
+## Primeri uporabe
 
-### 3.1 Iskanje plezališča v bližini
+### 1. Iskanje plezališča v bližini
 
 **Kaj uporabnik želi narediti:**  
 Izkušeni plezalec ali plezalec začetnik želi najti primerno plezališče v svoji bližini.
@@ -22,7 +22,7 @@ Uporabnik na zemljevidu vidu plezališča v okolici, pod njim pa je tudi seznam 
 
 ---
 
-### 3.2 Označevanje preplezane poti
+### 2. Označevanje preplezane poti
 
 **Kaj uporabnik želi narediti:**  
 Uporabnik želi označiti, da je neko plezalno smer uspešno preplezal.
@@ -45,7 +45,7 @@ Ocena uporabnika se prikaže na grafu, in vpliva na povprečno težavnost smeri.
 
 ---
 
-### 3.3 Dodajanje novega plezališča
+### 3. Dodajanje novega plezališča
 
 **Kaj uporabnik želi narediti:**  
 Izkušeni plezalec želi dodati novo notranje plezališče, ki ga še ni v sistemu.
@@ -66,7 +66,7 @@ Novo plezališče se pojavi na zemljevidu. Drugi uporabniki lahko komentirajo in
 
 ---
 
-### 3.4 Ustvarjanje dogodka za skupino
+### 4. Ustvarjanje dogodka za skupino
 
 **Kaj uporabnik želi narediti:**  
 Organizator želi povabiti člane skupine na skupno plezanje.
@@ -90,7 +90,7 @@ Dogodek se prikaže uporabnikom, ki so člani skupine.
 
 ---
 
-### 3.5 Komentiranje plezalne poti
+### 5. Komentiranje plezalne poti
 
 **Kaj uporabnik želi narediti:**  
 Plezalec želi dodati komentar na plezalni center.

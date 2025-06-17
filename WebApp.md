@@ -62,12 +62,22 @@ S tem projekt naslavlja potrebe po boljši preglednosti plezališč in večji po
 - [MongoDB](https://www.mongodb.com/) (lokalno nameščen ali MongoDB Atlas)
 - Git
 
-### Strojne zahteve za strežnik
+### Strojne zahteve
+Za lokalno delovanje ali postavitev na lastni strežnik priporočamo naslednje minimalne specifikacije:
 
+#### Minimalne zahteve (lokalni razvoj ali testni strežnik):
+- **CPU**: 1 jedri
+- **RAM**: 2 GB
+- **Disk**: 2-3 GB prostega prostora
 
-### 1.5 Glavne knjižnjice in orodja
+#### Priporočene zahteve):
+- **CPU**: 2 jedra ali več
+- **RAM**: 4 GB ali več
+- **Disk**: 5 GB
+
+## 3 Glavne knjižnjice in orodja
 Projekt **RockSolid** je razvit z uporabo **MERN** sklada z dodatnimi orodji in knjižnicami za izboljšano uporabniško izkušnjo,podporo za zemljevid in varnost.
-#### Čelni del (React + Vite)
+### Čelni del (React + Vite)
 - **React 18** s podprto **React Router v7** za navigacijo
 - **Vite** - hitro razvojno okolje za čelni del
 - **Material UI** za oblikovanje komponent
@@ -76,7 +86,7 @@ Projekt **RockSolid** je razvit z uporabo **MERN** sklada z dodatnimi orodji in 
 - **JWT Decode** za pridobivanje podatkov iz žetonov
 - **Recharts** za prikaz statistik in grafov
 
-#### Zaledni del (Node.js + Express)
+### Zaledni del (Node.js + Express)
 - **Express.js** za definiranje API poti
 - **MongoDB + Mongoose** kot baza in ORM
 - **JWT** za avtentikacijo uporabnikov
@@ -85,7 +95,7 @@ Projekt **RockSolid** je razvit z uporabo **MERN** sklada z dodatnimi orodji in 
 - **Haversine-distance** in **point-in-polygon** za geolokacijske izračune
 - **Jest + Supertest** za testiranje zalednega dela aplikacije 
 
-#### Orodja za razvoj
+### Orodja za razvoj
 - **Vite** (frontend) in **Nodemon** (backend)
 - **ESLint** za analizo kode in vzdrževanje standardov
 - **Jest** za testiranje backend funkcionalnosti

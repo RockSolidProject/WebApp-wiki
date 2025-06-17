@@ -21,7 +21,7 @@ jobs:
       - run:
           name: Replace wiki files 
           command: |
-            cp -r tmp/* wiki/
+            cp -r tmp/. wiki/
       - run:
           name: Update remote 
           command: |

@@ -19,7 +19,7 @@ jobs:
       - run:
           name: Replace wiki files 
           command: |
-            cp -r *.md wiki/
+            cp -r * wiki/
       - run:
           name: Update remote 
           command: |

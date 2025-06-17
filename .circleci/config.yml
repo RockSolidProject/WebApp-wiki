@@ -15,7 +15,7 @@ jobs:
       - run:
           name: Clone wiki repo
           command: |
-            git clone https://${GITHUB_API_KEY}@github.com/RockSolidProject/WebApp.wiki.git wiki
+            git clone https://${GITHUB_API_KEY}@github.com/RockSolidProject/WebApp.wiki.git wiki > /dev/null 2>&1 || echo "Clone failed"
       - run:
           name: Replace wiki files 
           command: |

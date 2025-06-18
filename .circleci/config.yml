@@ -19,13 +19,14 @@ jobs:
       - run:
           name: Replace wiki files 
           command: |
-            shopt -s extglob
-            cp -r !(wiki) wiki/
+            shopt -s extglob dotglob
+            rm -rfv wiki/!([.]*)
+            cp -rv !(wiki|.*) wiki/
       - run:
           name: Update remote 
           command: |
             cd wiki
-            git add .
+            git add -A
             git commit -m "Added updates from WebApp-wiki" || echo "No changes to commit"
             git push origin master
       

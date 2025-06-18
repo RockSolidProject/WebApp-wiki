@@ -1,4 +1,4 @@
-# projektne specifikacije
+# Projektne specifikacije
 
 ## Namen projekta
 
@@ -58,7 +58,7 @@ S tem projekt naslavlja potrebe po boljši preglednosti plezališč in večji po
 ---
 ## Zahteve
 ### Sistemske zahteve
-- [Node.js](https://nodejs.org/) (priporočena različica 18+)
+- [Node.js](https://nodejs.org/) (priporočena različica 18 ali več)
 - [MongoDB](https://www.mongodb.com/) (lokalno nameščen ali MongoDB Atlas)
 - Git
 
@@ -70,14 +70,14 @@ Za lokalno delovanje ali postavitev na lastni strežnik priporočamo naslednje m
 - **RAM**: 2 GB
 - **Disk**: 2-3 GB prostega prostora
 
-#### Priporočene zahteve):
+#### Priporočene zahteve:
 - **CPU**: 2 jedra ali več
 - **RAM**: 4 GB ali več
 - **Disk**: 5 GB
 
 ---
 ## Glavne knjižnjice in orodja
-Projekt **RockSolid** je razvit z uporabo **MERN** sklada z dodatnimi orodji in knjižnicami za izboljšano uporabniško izkušnjo,podporo za zemljevid in varnost.
+Projekt **RockSolid** je razvit z uporabo **MERN** sklada z dodatnimi orodji in knjižnicami za izboljšano uporabniško izkušnjo, podporo za zemljevid in varnost.
 ### Čelni del (React + Vite)
 - **React 18** s podprto **React Router v7** za navigacijo
 - **Vite** - hitro razvojno okolje za čelni del
@@ -96,11 +96,6 @@ Projekt **RockSolid** je razvit z uporabo **MERN** sklada z dodatnimi orodji in 
 - **Haversine-distance** in **point-in-polygon** za geolokacijske izračune
 - **Jest + Supertest** za testiranje zalednega dela aplikacije
 
-### Orodja za razvoj
-- **Vite** (frontend) in **Nodemon** (backend)
-- **ESLint** za analizo kode in vzdrževanje standardov
-- **Jest** za testiranje backend funkcionalnosti
-- **dotenv** za konfiguracijo okolja
 
 
 

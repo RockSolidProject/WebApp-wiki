@@ -19,7 +19,7 @@ jobs:
       - run:
           name: Replace wiki files 
           command: |
-            find wiki -mindepth 1 ! -name '.*' -exec rm -rf {} +
+            
             shopt -s extglob
             cp -r !(wiki) wiki/
       - run:

@@ -19,8 +19,8 @@ jobs:
       - run:
           name: Replace wiki files 
           command: |
-            
-            shopt -s extglob
+            shopt -s extglob dotglob
+            rm -rf wiki/!([.]*)
             cp -r !(wiki) wiki/
       - run:
           name: Update remote 

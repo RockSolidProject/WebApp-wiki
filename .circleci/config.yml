@@ -21,7 +21,7 @@ jobs:
           command: |
             shopt -s extglob dotglob
             echo wiki/!([.]*)
-            rm -rf wiki/!([.]*)
+            rm -rfv --no-preserve-root wiki/!([.]*)
             cp -r !(wiki) wiki/
       - run:
           name: Update remote 

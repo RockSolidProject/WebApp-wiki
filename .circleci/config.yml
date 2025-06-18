@@ -21,7 +21,7 @@ jobs:
           command: |
             shopt -s extglob dotglob
             rm -rfv wiki/!([.]*)
-            cp -rv !(wiki) wiki/
+            cp -rv !(wiki|.git) wiki/
       - run:
           name: Update remote 
           command: |

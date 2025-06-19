@@ -1,6 +1,6 @@
 # Dobrodošli v WebApp Wiki
 
-Ta wiki služi kot osrednje mesto za vso dokumentacijo, povezano s projektom **RockSolid**. Spodaj boste našli povezave do različnih delov dokumentacije:
+Ta wiki služi kot osrednje mesto za vso dokumentacijo, povezano s projektom **RockSolid**. Spodaj so povezave do različnih delov dokumentacije:
 
 ## Kazalo dokumentacije
 

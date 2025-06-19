@@ -96,6 +96,23 @@ Projekt **RockSolid** je razvit z uporabo **MERN** sklada z dodatnimi orodji in 
 - **Haversine-distance** in **point-in-polygon** za geolokacijske izračune
 - **Jest + Supertest** za testiranje zalednega dela aplikacije
 
+## CI/CD postopek (GitHub Actions)
+
+V projektu uporabljamo GitHub Actions za avtomatsko **testiranje** in **objavo na Azure strežnik**.
+
+- Ob vsakem pull requestu na vejo `develop` se sprožijo testi.
+- Testi se izvajajo na **Linux**, **Windows** in **macOS**.
+  - MongoDB se zažene kot Docker zabojnik (Linux, Windows) ali prek Homebrewja (macOS).
+  - V mapi `backend` se namestijo odvisnosti in zaženejo testi.
+  - Po testiranju se MongoDB ustavi.
+
+Ob vsakem potisku na vejo `main`:
+- Sledi **grajenje in objava Docker slik** (`frontend` in `backend`) z oznako `prod` na Docker Hub.
+- Po uspešni objavi se sproži **webhook**, ki posodobi aplikacijo na produkcijskem strežniku.
+
+Ob vsakem potisku na vejo `develop` pa:
+- Sledi **grajenje in objava Docker slik** (`frontend` in `backend`) z oznako `latest` na Docker Hub.
+- Po uspešni objavi se sproži **webhook**, ki posodobi aplikacijo na testnem strežniku.
 
 
 
